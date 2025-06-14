@@ -1,2 +1,2 @@
-# aerolinea.html
+# index.html
 Pagina web de aerolinea 

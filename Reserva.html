@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reservar vuelo - Airlyne</title>
+</head>
+<body>
+  <h1>Reservar vuelo</h1>
+ <section id="reserva">
+  <h2>Reservar vuelo</h2>
+  <form id="formReserva" onsubmit="procesarReserva(event)">
+    <label>Origen:</label>
+    <select id="origen" required>
+      <option value="">Selecciona un estado</option>
+      <option value="CDMX">CDMX</option>
+      <option value="Guadalajara">Guadalajara</option>
+      <option value="Monterrey">Monterrey</option>
+      <option value="Cancún">Cancún</option>
+      <!-- Agrega más estados según necesites -->
+    </select>
+
+    <label>Destino:</label>
+    <select id="destino" required>
+      <option value="">Selecciona un estado</option>
+      <option value="CDMX">CDMX</option>
+      <option value="Guadalajara">Guadalajara</option>
+      <option value="Monterrey">Monterrey</option>
+      <option value="Cancún">Cancún</option>
+    </select>
+
+    <label>Tipo de viaje:</label>
+    <select id="tipoViaje" required>
+      <option value="ida">Solo ida</option>
+      <option value="redondo">Viaje redondo</option>
+    </select>
+
+    <label>Fecha de salida:</label>
+    <input type="date" id="fecha" required>
+
+    <label>Pasajeros:</label>
+    <select id="pasajeros">
+      <option value="1">1 Adulto</option>
+      <option value="2">2 Adultos</option>
+      <option value="3">Adulto + Niño</option>
+    </select>
+
+    <button type="submit">Buscar vuelo</button>
+  </form>
+
+  <div id="resultadoReserva" style="margin-top:20px; background:#fff; color:#000; padding:15px; border-radius:10px; display:none;"></div>
+</section>
+  <a href="index.html">Volver al inicio</a>
+</body>
+</html>
